@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<hmtl>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>Events</title>
+</head>
+<body class="loginPage">
+<header>
+      <div id="brand"><a href="index.html">EventHub</a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="event-details.html">Details</a></li>
+          <li id="book"><a href="booking.html">Booking</a></li>
+          <li id="login"><a href="login.html">Account</a></li>
+        </ul>
+      </nav>
+      <div id="toggle" onclick="toggleMobileNav(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <ul class="mobileNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="event-details.html">Details</a></li>
+          <li id="book"><a href="booking.html">Booking</a></li>
+          <li id="login"><a href="login.html">Account</a></li>
+        </ul>
+      </div>
+    </header>
+    <br>
+    <h2>Sign Up Here:</h2>
+    <br>
+    <form action="index.html">
+        <label for="fname"><h3>*First Name:</h3></label>
+        <br>
+        <input type="text" placeholder="first name" required>
+        <br><br>
+        <label for="lname"><h3>*Last Name:</h3></label>
+        <br>
+        <input type="text" placeholder="last name" required>
+        <br><br>
+        <label for="email"><h3>*Email:</h3></label>
+        <br>
+        <input type="text" placeholder="email" required>
+        <br><br>
+        <label for="phone"><h3>Phone Number:</h3></label>
+        <br>
+        <input type="text" placeholder="phone number">
+        <br><br>
+        <label for="password"><h3>*Password:</h3></label>
+        <br>
+        <input type="password" placeholder="password" required>
+        <br><br>
+        <button type="submit">Sign Up:</button>
+    </form>
+    <a href="login.html"><button>Have an account already?</button></a>
+    <footer>
+    <br>
+    <p>&copy;2025 EventHub. All rights reserved.</p>
+    <img src="Images/facebook icon.png" alt="Facebook">
+    <img src="Images/email icon.png" alt="Email">
+    <img src="Images/instagram icon.png" alt="Instagram">
+</footer>
+</body>
+
+</html>
