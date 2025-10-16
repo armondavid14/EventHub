@@ -25,6 +25,10 @@ header {
   display: flex;
   align-items: center;
 }
+#brand img {
+  height: 20px;
+  width: 20px;
+}
 #brand a {
   color: rgb(6, 30, 53);
 }
@@ -69,9 +73,10 @@ ul li:hover {
 }
 h1 {
   text-align: center;
+  font-weight: bold;
 }
 img {
-  height: 300px;
+  height: 400px;
   width: 100%;
   object-fit: cover;
   overflow: hidden;
@@ -85,7 +90,7 @@ body {
   overflow: auto;
   position: relative;
   margin: 0;
-  padding-bottom: 6.74rem;
+  padding-bottom: 15rem;
 }
 .home {
   display: flex;
@@ -97,15 +102,20 @@ body {
   width: 100%;
   object-fit: cover;
   overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .home div {
-  background-color: rgb(123, 244, 248);
+  border-radius: 5px;
+  box-shadow: 2px 1px 1px 1px;
+  background-color: skyblue;
   margin: 20px;
   justify-content: center; 
 }
-
 .jobs div {
   display: inline-block;
+  border-radius: 5px;
+  box-shadow: 2px 1px 1px 1px;
   margin: 20px;
   width: 30%;
   background-color: beige;
@@ -114,31 +124,72 @@ body {
   width: 100%;
   object-fit: cover;
   overflow: hidden;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 button {
   padding: 3px;
   margin: 3px;
   border-radius: 8px;
+  background-color: rgb(66, 80, 199);
+  font-weight: bold;
+  color: white;
+}
+button:hover {
+  background-color: rgb(113, 92, 206);
 }
 .jobDetails div {
+  border-radius: 5px;
+  box-shadow: 2px 1px 1px 1px;
   display: inline-block;
-  padding: 10px;
   margin: 20px;
   width: 30%;
   background-color: skyblue;
 }
-.contact div {
+.jobDetails div img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.contact {
+  margin: auto;
+  background-color: rgb(226, 204, 177);
+  border-radius: 10px;
   text-align: center;
-  width: 90%;
   padding: 10px;
+  width: 30%;
+  box-shadow: 2px 1px 1px 1px; 
+}
+#booking-form button, #contact-form  button {
+  background-color: rgb(66, 80, 199);
+  font-weight: bold;
+  color: white;
+}
+#questions {
+  border: none;
+  text-decoration: underline;
+  background-color: transparent;
+  color: blue;
 }
 .contactPage {
   background-color: bisque;
 }
+.contactPage button {
+  background-color: rgb(152, 173, 233);
+}
 .loginPage {
   background-color: rgb(152, 207, 240);
 }
+.loginForm {
+  margin: auto;
+  background-color: rgb(94, 161, 187);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  width: 30%;
+  box-shadow: 2px 1px 1px 1px; 
+}
 footer {
+  padding: 50px;
   display: flexbox;
   position: absolute;
   right: 0;
@@ -188,7 +239,7 @@ footer img {
   position: absolute;
   top: 50px;
   left: 0;
-  height: calc(100vh - 50px);
+  height: 50vh;
   width: 100%;
   font-size: 16px;
   font-weight: bold;
@@ -211,19 +262,24 @@ footer img {
     max-width: fit-content;
   }
   .home div {
-    border: 1px solid hsl(231, 86%, 60%);
+    box-shadow: 1px .5px .5px .5px;
   }
   .jobs div {
     display: inline-block;
     width: 90%;
-    border: 1px solid hsl(231, 86%, 60%);
+    box-shadow: 1px .5px .5px .5px;
   }
   .jobDetails div {
     width: 90%;
-    border-bottom: 1px solid #7f5eda;
+    box-shadow: 1px .5px .5px .5px;
   }
-  #booking-form {
-    width: 100%;
+  .contact {
+    width: 90%;
+    box-shadow: 1px .5px .5px .5px;
+  }
+  .loginForm {
+    width: 90%;
+    box-shadow: 1px .5px .5px .5px;
   }
   footer {
     width: 100%;
